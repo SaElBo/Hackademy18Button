@@ -30,8 +30,8 @@ div {
     border-radius: .5rem;
     border: .1rem solid rgba(117, 117, 117, 0.534);
     color: black;
-    background: linear-gradient(90deg, #f1f3f8, #d6e0f0, #8d93ab, #393b44);
-    background-size: 3600%;
+    background: linear-gradient(90deg, blue, cyan, purple, #393b44);
+    background-size: 200%;
     background-position: 0 90;
     transition: .3s;
 }
@@ -259,7 +259,7 @@ input[type='checkbox']:checked~a {
     z-index: 100;
 }
 
-.hamburger{
+.ntn-7 .hamburger{
     /* color: white; */
     position: absolute;
     top:50%;
