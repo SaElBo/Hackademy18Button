@@ -333,7 +333,13 @@ input[type='checkbox'].menu-2 {
 }
 
 input[type='checkbox'].menu-2::after {
-    content: '';
+    content: '\f011';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+   text-align: center;
+   line-height: 4.9rem;
+   font-size: 2rem;
+   color: green;
     display: inline-block;
     width: 5rem;
     height: 5rem;
@@ -355,6 +361,7 @@ input[type='checkbox'].menu-2:checked::after {
     box-shadow: 
     -4px -4px 4px 0 rgba(255, 255, 255, 0.808),
      4px 4px 4px 0 rgba(0, 0, 0, 0.397);
+     color: rgb(228, 8, 8);
 }
 
 input[type='checkbox'].menu-2:checked~.top {
