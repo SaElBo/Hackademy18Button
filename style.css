@@ -5,13 +5,17 @@
 
 /* General layout */
 
+:root {
+    --bgColor: #eee;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    background-color: #eee;
+    background-color: var(--bgColor);
 }
 
 a {
@@ -19,11 +23,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.btn-1,.btn-2,.btn-3,.btn-4,.btn-5,.btn-6,.btn-7,.btn-8,.btn-9,.btn-10,.btn-11{
-    margin-top:3rem;
+
+.btn-1, .btn-2, .btn-3, .btn-4, .btn-5, .btn-6, .btn-7, .btn-8, .btn-9, .btn-10, .btn-11 {
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
-
 
 /* First button */
 
@@ -336,19 +340,17 @@ input[type='checkbox'].menu-2::after {
     content: '\f011';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-   text-align: center;
-   line-height: 4.9rem;
-   font-size: 2rem;
-   color: green;
+    text-align: center;
+    line-height: 4.9rem;
+    font-size: 2rem;
+    color: green;
     display: inline-block;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     background: #eee;
     background-size: contain;
-    box-shadow: 
-    -9px -9px 9px 0 rgba(255, 255, 255, 0.808), 
-    9px 9px 9px 0 rgba(0, 0, 0, 0.397);
+    box-shadow: -9px -9px 9px 0 rgba(255, 255, 255, 0.808), 9px 9px 9px 0 rgba(0, 0, 0, 0.397);
     position: absolute;
     top: 0;
     left: 0;
@@ -358,21 +360,18 @@ input[type='checkbox'].menu-2::after {
 }
 
 input[type='checkbox'].menu-2:checked::after {
-    box-shadow: 
-    -4px -4px 4px 0 rgba(255, 255, 255, 0.808),
-     4px 4px 4px 0 rgba(0, 0, 0, 0.397);
-     color: rgb(228, 8, 8);
+    box-shadow: -4px -4px 4px 0 rgba(255, 255, 255, 0.808), 4px 4px 4px 0 rgba(0, 0, 0, 0.397);
+    color: rgb(228, 8, 8);
 }
 
 input[type='checkbox'].menu-2:checked~.top {
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
     position: absolute;
     top: -8rem;
     left: -2.5rem;
     transition: 5s;
-    
 }
 
 input[type='checkbox'].menu-2:checked~.left {
@@ -382,19 +381,17 @@ input[type='checkbox'].menu-2:checked~.left {
     position: absolute;
     top: -2rem;
     left: -8rem;
-   
 }
 
-.top a, .left a{
+.top a, .left a {
     display: inline;
     padding: 0.5rem;
     letter-spacing: 2px;
 }
 
-
 /* decimo bottone */
 
-.btn-10{
+.btn-10 {
     margin: 2rem;
     width: 200px;
     height: 60px;
@@ -407,37 +404,41 @@ input[type='checkbox'].menu-2:checked~.left {
     position: relative;
     outline: none;
 }
-.btn-10:active{
+
+.btn-10:active {
     color: #0a6aaa;
 }
-.btn-10::before, .btn-10::after{
+
+.btn-10::before, .btn-10::after {
     content: '';
     position: absolute;
     width: 20px;
     height: 4px;
-    background: #eee;
+    background: var(--bgColor);
     transition: .5s;
 }
-.btn-10::before{
+
+.btn-10::before {
     top: -4px;
     left: 10%
 }
 
-.btn-10::after{
+.btn-10::after {
     bottom: -4px;
     right: 10%;
 }
 
-.btn-10:hover::before{
+.btn-10:hover::before {
     left: 80%;
 }
-.btn-10:hover::after{
-    right:  80%;
+
+.btn-10:hover::after {
+    right: 80%;
 }
 
 /*Btn-11*/
 
-.btn-11{
+.btn-11 {
     display: inline-block;
     padding: 1.2rem 2.7rem;
     border: 3px solid black;
@@ -445,67 +446,64 @@ input[type='checkbox'].menu-2:checked~.left {
     text-transform: uppercase;
     position: relative;
     transition: .5s;
-    
 }
 
-.btn-11__container--left,.btn-11__container--right{
+.btn-11__container--left, .btn-11__container--right {
     display: none;
     font-size: 3rem;
 }
 
-.btn-11:hover{
+.btn-11:hover {
     padding: 10rem 15rem;
-    background: rgb(2,176,231);
+    background: rgb(2, 176, 231);
     background: linear-gradient(120deg, rgb(255, 187, 2) 49%, rgb(19, 17, 66) 49%);
 }
-.btn-11:hover .text{
+
+.btn-11:hover .text {
     display: none;
 }
-.btn-11:hover .btn-11__container--left{
+
+.btn-11:hover .btn-11__container--left {
     position: absolute;
     display: inline;
     padding: 2rem;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
-.btn-11:hover .btn-11__container--right{
+
+.btn-11:hover .btn-11__container--right {
     position: absolute;
     display: inline;
     padding: 2rem;
-    bottom:0;
-    right:0;
+    bottom: 0;
+    right: 0;
     color: white;
 }
-.btn-11__container--right i,.btn-11__container--left i{
+
+.btn-11__container--right i, .btn-11__container--left i {
     margin: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
 /* The switch - the box around the slider */
+
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -514,13 +512,13 @@ input[type='checkbox'].menu-2:checked~.left {
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "\f185";
     font-family: "Font Awesome 5 Free";
-     font-weight: 900;
+    font-weight: 900;
     text-align: center;
     line-height: 1.7rem;
     height: 26px;
@@ -529,34 +527,70 @@ input[type='checkbox'].menu-2:checked~.left {
     bottom: 4px;
     background-color: white;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color:rgb(126, 126, 126);
-  }
-  
-  input:focus + .slider {
+}
+
+input:checked+.slider {
+    background-color: rgb(126, 126, 126);
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px rgb(126, 126, 126);
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
     background-color: black;
     content: "\f186";
-    color:white;
+    color: white;
     font-family: "Font Awesome 5 Free";
-     font-weight: 900;
+    font-weight: 900;
     text-align: center;
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
-  
+}
+
+/*///////////////////////////////////////////*/
+
+.btn-12, .btn-12:visited, .btn-12:link {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-size: 1.6rem; 
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    margin-top: -40rem;
+}
+
+.btn-12:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   
+} 
+.btn-12:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+.btn-12:active, .btn-12:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
